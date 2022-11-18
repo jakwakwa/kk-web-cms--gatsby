@@ -1,0 +1,16 @@
+---
+label: Services
+hide_body: true
+fields:
+- type: text
+  name: services_title
+  label: services_title
+- type: textarea
+  name: services_paragraph
+  label: services_paragraph
+- type: text
+  name: serviceslist_heading
+  label: serviceslist_heading
+- type: list
+  name: services_list
+  label: services_list
