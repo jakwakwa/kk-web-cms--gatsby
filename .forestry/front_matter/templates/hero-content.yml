@@ -21,3 +21,5 @@ fields:
     schema:
       format: markdown
   label: Paragraph
+pages:
+- src/content/hero/Hero.mdx
