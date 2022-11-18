@@ -1,19 +1,19 @@
 ---
 label: Hero
 hide_body: true
-display_field: heading
+display_field: hero_heading
 fields:
-- name: heading
+- name: hero_heading
   type: text
   config:
     required: false
   label: Heading
-- name: secondary_heading
+- name: hero_secondary_heading
   type: text
   config:
     required: false
   label: Secondary Heading
-- name: paragraph
+- name: hero_paragraph
   type: text
   config:
     required: false
