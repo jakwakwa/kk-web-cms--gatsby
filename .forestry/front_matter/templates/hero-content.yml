@@ -3,29 +3,29 @@ label: Hero
 hide_body: true
 display_field: heading
 fields:
-- name: heading
-  type: text
-  config:
-    required: false
-  label: Heading
-- name: secondary_heading
-  type: text
-  config:
-    required: false
-  label: Secondary Heading
-- name: paragraph
-  type: text
-  config:
-    required: false
-  label: Paragraph
-- name: hero_content
-  type: textarea
-  default: ''
-  config:
-    required: false
-    wysiwyg: false
-    schema:
-      format: markdown
-  label: Hero Content
+  - name: heading
+    type: text
+    config:
+      required: false
+    label: Heading
+  - name: secondary_heading
+    type: text
+    config:
+      required: false
+    label: Secondary Heading
+  - name: paragraph
+    type: text
+    config:
+      required: false
+    label: Paragraph
+  - name: hero_content
+    type: textarea
+    default: ""
+    config:
+      required: false
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: Hero Content
 pages:
-- src/content/hero/Hero.mdx
+  - src/content/hero/hero.mdx
