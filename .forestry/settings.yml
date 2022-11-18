@@ -21,7 +21,7 @@ sections:
   label: Services
   create: documents
   match: "**/*"
-  new_doc_ext: ".mdx"
+  new_doc_ext: mdx
 upload_dir: static/uploads
 public_path: "/static/uploads"
 front_matter_path: ''
