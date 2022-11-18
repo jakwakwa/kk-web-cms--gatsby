@@ -7,12 +7,12 @@ fields:
   type: text
   config:
     required: false
-  label: Heading
+  label: Hero Heading
 - name: secondary_heading
   type: text
   config:
     required: false
-  label: Secondary Heading
+  label: Hero Secondary Heading
 - name: paragraph
   type: textarea
   default: ''
@@ -21,6 +21,6 @@ fields:
     wysiwyg: false
     schema:
       format: markdown
-  label: Paragraph
+  label: Hero Paragraph
 pages:
 - src/content/hero/Hero.mdx
