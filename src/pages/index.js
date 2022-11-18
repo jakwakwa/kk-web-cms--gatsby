@@ -20,19 +20,12 @@ import Contact from "../components/home/contact"
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
     query HeroQuery {
-      mdx {
-        frontmatter {
-          heading
-          paragraph
-          secondary_heading
-          about_title
-          about_paragraph
-          about_paragraph_two
-        }
-      }
       allMdx {
         nodes {
           frontmatter {
+            hero_heading_one
+            hero_paragraph
+            hero_secondary_heading
             about_paragraph
             about_paragraph_two
             about_title
@@ -48,29 +41,91 @@ const IndexPage = () => {
 
   const str = JSON.stringify(data)
   const jsStr = JSON.parse(str)
-  console.log(jsStr)
+  // console.log(jsStr)
 
-  const aboutTitle = jsStr.allMdx.nodes[2].frontmatter.about_title
-  const aboutParagraph = jsStr.allMdx.nodes[2].frontmatter.about_paragraph
-  const aboutParagraphSecond =
-    jsStr.allMdx.nodes[2].frontmatter.about_paragraph_two
-  const servParagraph = jsStr.allMdx.nodes[1].frontmatter.services_paragraph
+  // const heroHeadingOne = jsStr.allMdx.nodes[0].frontmatter.hero_heading_one
+  // const heroParagraph = jsStr.allMdx.nodes[0].frontmatter.hero_paragraph
 
-  const servTitle = jsStr.allMdx.nodes[1].frontmatter.services_title
-  const servListHeading = jsStr.allMdx.nodes[1].frontmatter.serviceslist_heading
+  // const heroHeadingTwo =
+  //   jsStr.allMdx.nodes[0].frontmatter.hero_secondary_heading
 
-  const servList = jsStr.allMdx.nodes[1].frontmatter.services_list
+  // const aboutTitle = jsStr.allMdx.nodes[1].frontmatter.about_title
+  // const aboutParagraph = jsStr.allMdx.nodes[1].frontmatter.about_paragraph
+  // const aboutParagraphSecond =
+  //   jsStr.allMdx.nodes[2].frontmatter.about_paragraph_two
+  // const servParagraph = jsStr.allMdx.nodes[2].frontmatter.services_paragraph
 
+  // const servTitle = jsStr.allMdx.nodes[2].frontmatter.services_title
+  // const servListHeading = jsStr.allMdx.nodes[2].frontmatter.serviceslist_heading
+
+  // const servList = jsStr.allMdx.nodes[2].frontmatter.services_list
+  let obj = {}
+  let one = {}
+  let two = {}
+  let three = {}
+  const mappedData = jsStr.allMdx.nodes.map(s => {
+    if (
+      s.frontmatter.hero_heading_one === null &&
+      s.frontmatter.services_title === null &&
+      s.frontmatter.about_title !== null
+    ) {
+      one = {
+        aboutParagraph: s.frontmatter.about_paragraph,
+        aboutParagraphSecond: s.frontmatter.about_paragraph_two,
+        aboutTitle: s.frontmatter.about_title,
+      }
+      return one
+    }
+  })
+
+  const mappedData2 = jsStr.allMdx.nodes.map(s => {
+    if (
+      s.frontmatter.hero_heading_one !== null &&
+      s.frontmatter.services_title === null &&
+      s.frontmatter.about_title === null
+    ) {
+      two = {
+        heroHeadingOne: s.frontmatter.hero_heading_one,
+        heroParagraph: s.frontmatter.hero_paragraph,
+        heroHeadingTwo: s.frontmatter.hero_secondary_heading,
+      }
+      return two
+    }
+  })
+
+  const mappedData3 = jsStr.allMdx.nodes.map(s => {
+    if (
+      s.frontmatter.hero_heading_one === null &&
+      s.frontmatter.services_title !== null &&
+      s.frontmatter.about_title === null
+    ) {
+      three = {
+        servParagraph: s.frontmatter.services_paragraph,
+        servTitle: s.frontmatter.services_title,
+        servListHeading: s.frontmatter.serviceslist_heading,
+        servList: s.frontmatter.services_list,
+      }
+      return three
+    }
+  })
+
+  console.log("obj1", one)
+  console.log("obj2", two)
+  console.log("obj3", three)
+  // console.log("mappedData", mappedData)
+
+  const homeData = { ...one, ...two, ...three }
+  console.log("homeData", homeData)
   return (
     <>
       <Layout>
         <Seo title="Home" />
         <div className={hero}>
           <div>
-            <h1>{data.mdx.frontmatter.heading}</h1>
-            <h2>{data.mdx.frontmatter.secondary_heading}</h2>
-            <p>{data.mdx.frontmatter.paragraph}</p>
-            <div className={heroLinkWrapper}>
+            <h1>{homeData.heroHeadingOne}</h1>
+            <h2>{homeData.heroHeadingTwo}</h2>
+            <p>{homeData.heroParagraph}</p>
+            <div className={homeData.heroLinkWrapper}>
               <Link
                 to="#contact"
                 style={{
@@ -82,28 +137,20 @@ const IndexPage = () => {
               </Link>
             </div>
           </div>
-          <div className={heroImg}>
-            <StaticImage
-              src="../images/hero-img.png"
-              width={800}
-              quality={95}
-              formats={["auto", "webp", "avif"]}
-              alt="A Gatsby astronaut"
-            />
-          </div>
+          <div className={heroImg}></div>
         </div>
         <div className={headerdiv}></div>
 
         <Services
-          title={servTitle}
-          paragraph={servParagraph}
-          listHeading={servListHeading}
-          list={servList}
+          title={homeData.servTitle}
+          paragraph={homeData.servParagraph}
+          listHeading={homeData.servListHeading}
+          list={homeData.servList}
         />
         <About
-          title={aboutTitle}
-          paragraph={aboutParagraph}
-          secondParagraph={aboutParagraphSecond}
+          title={homeData.aboutTitle}
+          paragraph={homeData.aboutParagraph}
+          secondParagraph={homeData.aboutParagraphSecond}
         />
         <Contact />
       </Layout>

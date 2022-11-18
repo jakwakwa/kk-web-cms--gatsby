@@ -19,21 +19,21 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `hero`,
-        path: `${__dirname}/src/content/hero`,
+        path: `${__dirname}content/hero`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `about`,
-        path: `${__dirname}/src/content/about`,
+        path: `${__dirname}content/about`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `services`,
-        path: `${__dirname}/src/content/services`,
+        path: `${__dirname}content/services`,
       },
     },
     `gatsby-plugin-mdx`,
