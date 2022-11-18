@@ -1,0 +1,697 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap");
+
+.contact,
+.contactBg {
+  margin-top: 70px;
+  height: 80vh;
+}
+
+.contact {
+  position: relative;
+  padding-left: 50% !important;
+}
+
+.contactBg {
+  background-image: url("../images/cpconceptp2.png");
+  font-family: "Montserrat", sans-serif;
+  font-size: 36px;
+  padding-top: 70px;
+  background-size: 100vw;
+  background-repeat: no-repeat;
+  width: 100vw;
+  left: 0px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  bottom: -4px !important;
+  z-index: -9;
+}
+.header {
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px,
+    rgba(17, 17, 26, 0.05) 0px 8px 32px;
+  position: fixed;
+  width: 100vw;
+  height: 70px;
+  z-index: 9999999999;
+  top: 0;
+}
+.header > div {
+  padding: 8px 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.layoutstyles {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.header div div div {
+  max-width: 200px !important;
+}
+.headerStyles a:hover {
+  color: #61dec8;
+  background-color: #265d69;
+}
+
+.headerStyles a {
+  border-radius: 5px;
+  padding: 10px;
+  color: #50b0a3;
+  transition: background-color 0.2s ease-in;
+  font-size: 14px;
+  font-weight: 800;
+}
+.servicesBg {
+  background-image: url("../images/cpconceptp2.png");
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 36px;
+  padding-top: 70px;
+  background-size: 110vw;
+  background-repeat: no-repeat;
+  width: 100vw;
+  left: 0px;
+  height: 1330px;
+  background-position-x: -5px;
+  background-position-y: -58px;
+  overflow: hidden;
+  position: absolute;
+  top: 741px;
+  z-index: -9;
+}
+.hero {
+  background-image: url("../images/cpconceptp1.png");
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 36px;
+
+  padding-left: 0;
+  background-size: 103vw;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: calc(100vh - 126px);
+  background-position-x: -7px;
+  background-position-y: -54px;
+  overflow: hidden;
+  margin-top: 64px;
+  display: flex;
+  padding: 0 12%;
+  padding-top: 110px;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 36px;
+  padding-left: 0;
+  background-size: 103vw;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: calc(100vh - 126px);
+  background-position-x: -7px;
+  background-position-y: -54px;
+  overflow: hidden;
+  margin-top: 64px;
+  display: flex;
+  padding: 0 10%;
+  padding-top: 110px;
+  justify-content: space-between;
+}
+.hero > div {
+  width: 80%;
+}
+
+.hero .heroImg {
+  width: 100%;
+  top: 5rem;
+  margin-right: 0 !important;
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+  position: relative;
+}
+
+.hero .heroImg > div {
+  top: 30px;
+  width: 100%;
+  display: inline-block !important;
+  margin-right: 0;
+}
+
+.headerdiv {
+  height: 18px;
+  background-color: #265d69;
+  position: absolute;
+  z-index: 999999999;
+  left: 0;
+  width: 100vw;
+}
+
+.hero h1,
+.hero h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 50px;
+  color: #265d69;
+  font-weight: 800;
+  line-height: 1.1;
+  padding: 0;
+  margin: 0;
+
+  margin-top: 30px;
+  text-transform: uppercase;
+}
+.hero h2 {
+  margin: 0;
+  margin-bottom: 40px;
+  color: #5dc1ae;
+  text-transform: uppercase;
+}
+.hero p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 21px;
+  font-weight: 600;
+  line-height: 1.8;
+  padding-left: 0px;
+  max-width: 75%;
+  color: #7397a3;
+}
+.whatWeDo,
+.contact {
+  /* background-color: aquamarine; */
+  font-family: "Montserrat", sans-serif;
+  font-size: 36px;
+  padding: 0 12%;
+  padding-top: 50px;
+}
+
+.whatWeDoBody {
+  padding-left: 50px;
+}
+.whoWeAre {
+  font-family: "Montserrat", sans-serif;
+  font-size: 36px;
+  padding: 0 12%;
+  padding-top: 250px;
+  padding-bottom: 0px;
+  margin-bottom: 0;
+}
+
+.whoWeAre img {
+  max-height: 500px;
+  padding-left: 50px;
+}
+.whoWeAreBody {
+  padding-left: 50px;
+}
+
+.whatWeDo h1,
+.contact h1 {
+  /* background-color: aquamarine; */
+  font-family: "Montserrat", sans-serif;
+  font-size: 42px;
+  padding-top: 50px;
+  color: #aaeded;
+  text-transform: uppercase;
+}
+
+.contact {
+  padding-top: 0px;
+}
+
+.whoWeAre h1 {
+  /* background-color: aquamarine; */
+  font-family: "Montserrat", sans-serif;
+  font-size: 42px;
+  padding-top: 50px;
+  color: #265d69;
+  text-transform: uppercase;
+}
+.whatWeDo h3,
+.contact h3 {
+  /* background-color: aquamarine; */
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+  padding-top: 20px;
+  color: #e4f5f3;
+}
+
+.contact h3 {
+  margin-top: 20px;
+}
+
+.whatWeDo p,
+.contact p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.7;
+  max-width: 90%;
+  color: #ffffff;
+}
+
+.contact p {
+  font-weight: 400;
+  font-size: 14px;
+}
+.contact p span {
+  /* margin-right: 20px; */
+  width: 70px;
+  display: inline-block;
+  font-weight: 800;
+  color: #ffffff;
+  color: #e4f5f3;
+}
+
+.whoWeAre p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.7;
+  max-width: 90%;
+  color: #7397a3;
+}
+.whatWeDo ul li,
+.contact ul li {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.1;
+  max-width: 70%;
+  color: #eef1f1;
+}
+
+.footer {
+  font-family: "Montserrat", sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 1.5;
+  position: relative;
+  width: 100vw;
+  bottom: 0;
+  left: 0px;
+  padding: 30px;
+  text-align: right;
+  margin-top: 0px !important;
+}
+.footer a {
+  color: white;
+  font-weight: 800;
+}
+
+.servicesBg {
+  top: 786px;
+}
+
+.contactBg {
+  bottom: 186px;
+}
+.layoutstyles {
+  max-width: 100% !important;
+}
+.hero {
+  padding-left: 9%;
+}
+
+.contact input {
+  outline: none;
+  border: 2px solid;
+  border-radius: 6px;
+  border-color: #305764;
+  box-shadow: inset 1px 2px 2px 2px #bdbdbd;
+  display: block;
+}
+
+.contact p {
+  padding: 0;
+  margin: 0;
+}
+
+.contact label {
+  font-size: 16px;
+  color: #bdbdbd;
+  font-weight: 700;
+  padding: 10px;
+  /* outline: none;
+  border: 2px solid;
+  border-radius: 6px;
+  border-color: #305764;
+  box-shadow: inset 1px 2px 2px 2px #bdbdbd;
+  display: block; */
+}
+
+button {
+  border: none;
+  color: #fff;
+  border-radius: 6px;
+  height: 3.5rem;
+  padding: 0.5rem;
+  outline: none;
+  cursor: pointer;
+  line-height: 1;
+  margin-top: 20px !important;
+  height: 100%;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-box-shadow: 0 2px 2px rgba(0, 80, 125, 0.68),
+    0 8px 8px rgba(0, 0, 0, 0.14);
+  box-shadow: 0 2px 2px rgba(0, 80, 125, 0.68), 0 8px 8px rgba(0, 0, 0, 0.14);
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  width: 100px;
+  background: #4ea999;
+  -webkit-box-shadow: 0 2px 2px rgba(0, 80, 125, 0.68),
+    0 8px 8px rgba(0, 0, 0, 0.14);
+  box-shadow: 0 2px 2px rgba(0, 80, 125, 0.68), 0 8px 8px rgba(0, 0, 0, 0.14);
+  text-transform: uppercase !important;
+}
+
+.hero a,
+.header .contactBtn {
+  border: none;
+  color: #fff;
+  border-radius: 6px;
+  height: 3.5rem;
+  padding: 15px 20px;
+  outline: none;
+  cursor: pointer;
+  line-height: 1;
+  letter-spacing: 0.6px;
+  margin-top: 20px !important;
+  height: 100%;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-box-shadow: 0 2px 2px rgba(0, 80, 125, 0.68),
+    0 8px 8px rgba(0, 0, 0, 0.14);
+  box-shadow: 0 2px 2px rgba(0, 80, 125, 0.68), 0 8px 8px rgba(0, 0, 0, 0.14);
+  font-size: 12px !important;
+  font-weight: 800 !important;
+  width: 250px !important;
+  background: #4ea999;
+  -webkit-box-shadow: 0 2px 2px rgba(0, 80, 125, 0.68),
+    0 8px 8px rgba(0, 0, 0, 0.14);
+  box-shadow: 0 2px 2px rgba(0, 80, 125, 0.68), 0 8px 8px rgba(0, 0, 0, 0.14);
+  text-transform: uppercase !important;
+}
+
+.contactBtn:hover,
+button:hover,
+.hero a:hover {
+  background-color: #305764;
+}
+@media (max-width: 1460px) {
+  .layoutstyles {
+    max-width: 100%;
+  }
+  .hero {
+    padding-left: 5%;
+    font-family: "Montserrat", sans-serif;
+    /* font-size: 36px; */
+
+    background-size: 110vw;
+    /* background-repeat: no-repeat;  */
+    width: 100vw;
+    height: calc(100vh - 60px);
+    background-position-x: 0px;
+    background-position-y: 0px;
+    /* overflow: hidden; */
+    /* margin-top: 51px; */
+    display: flex;
+    padding: 0 8%;
+    padding-top: 70px;
+  }
+
+  .servicesBg {
+    top: 736px;
+  }
+  .hero .heroImg {
+    width: 55%;
+    position: absolute;
+    top: 11rem;
+    right: 4rem;
+  }
+
+  .hero .heroImg > div {
+    top: 0px;
+    width: initial;
+    display: inline-block !important;
+  }
+
+  .hero > div {
+    width: 45%;
+  }
+
+  .hero h1,
+  .hero h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 40px;
+  }
+
+  .hero p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 19px;
+    line-height: 1.5;
+  }
+  .whatWeDo {
+    padding-top: 90px;
+  }
+  .whoWeAre {
+    padding-top: 180px;
+  }
+}
+
+@media (max-width: 460px) {
+  .contact {
+    position: relative;
+    padding-left: 6% !important;
+    padding-right: 7% !important;
+    padding-bottom: 50px;
+    height: initial !important;
+    margin-top: 0;
+  }
+
+  .contact {
+    background-color: #265d69e1;
+  }
+
+  .contact h1 {
+    font-size: 20px;
+  }
+
+  .contactBg {
+    top: initial !important;
+  }
+  .hero {
+    background-image: none;
+
+    font-family: "Montserrat", sans-serif;
+    font-size: 36px;
+    padding-top: 70px;
+    background-size: initial;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 700px;
+    background-position-x: initial;
+    background-position-y: initial;
+    overflow: hidden;
+    margin-top: 33px;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    padding-left: 0;
+  }
+
+  .hero > div {
+    width: 100%;
+  }
+
+  .hero h1,
+  .hero h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2rem;
+    color: #265d69;
+    font-weight: 800;
+    line-height: 1.1 !important;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+
+    margin-top: 30px;
+    text-transform: uppercase;
+    padding: 0 20px;
+  }
+  .hero h2 {
+    margin: 0;
+    margin-bottom: 20px;
+    color: #5dc1ae;
+    text-transform: uppercase;
+  }
+  .hero p {
+    font-size: 14px;
+    text-align: center;
+    max-width: 100%;
+    padding: 0 30px;
+  }
+  .hero .heroImg {
+    width: 84%;
+    position: absolute;
+    top: 27rem;
+    right: 2rem;
+  }
+  .headerStyles {
+    padding: 0px 0px;
+  }
+
+  .layoutstyles {
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .header > div {
+    margin: 0;
+    max-width: 100%;
+    padding: 10px 20px;
+    padding-top: 11px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header > div > div {
+    margin-top: 3px;
+  }
+  .headerdiv {
+    width: 100vw;
+  }
+  .headerStyles > a {
+    margin-right: 8px !important;
+    font-size: 10px;
+    line-height: 0.2;
+    padding: 2px !important;
+  }
+  h1 {
+    line-height: 0.6 !important;
+  }
+  .header .gatsby-image-wrapper {
+    max-width: 100px !important;
+  }
+  .header div img {
+    width: 100%;
+    max-width: 150px;
+  }
+
+  .header div div div {
+    max-width: 130px !important;
+  }
+  .whatWeDo {
+    flex-direction: column;
+    position: relative;
+
+    padding: 0 2%;
+    padding-bottom: 50px;
+  }
+
+  .whatWeDo h1 {
+    font-size: 30px;
+    padding-top: 0;
+    margin-top: -20px;
+  }
+
+  .whatWeDo > div {
+    /* margin-top: 60px !important;
+    width: 61%;
+    right: 0px;
+    margin-top: 17px;
+    align-self: self-end; */
+
+    margin-top: 60px !important;
+    width: 71%;
+    right: 0px;
+    margin-top: 17px;
+    align-self: center;
+  }
+
+  .contactBtn {
+    visibility: hidden;
+    display: none;
+  }
+
+  .heroLinkWrapper {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .hero a {
+    margin: 0 auto;
+    margin: 0 auto;
+    display: block;
+    width: 131px !important;
+  }
+
+  .servicesBg,
+  .contactBg {
+    font-family: "Montserrat", sans-serif;
+    font-size: 36px;
+    padding-top: 70px;
+    background-size: 691vw;
+    background-repeat: no-repeat;
+    width: 100vw;
+    left: 0px;
+    height: 232%;
+    background-position-x: -794px;
+    background-position-y: -90px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    top: 735px;
+    z-index: -9;
+  }
+
+  .whatWeDoBody {
+    width: 100% !important;
+    padding-left: 30px;
+  }
+
+  .whatWeDo {
+    background-color: rgba(0, 82, 78, 0.596);
+  }
+
+  .whoWeAre {
+    background-color: #ffffff;
+    padding-top: 0;
+    display: flex;
+    flex-direction: column-reverse;
+    height: auto;
+    width: 100% !important;
+
+    padding: 0 2%;
+  }
+
+  .whoWeAre p {
+    max-width: 100%;
+  }
+
+  .whoWeAreBody {
+    width: 100% !important;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 10px;
+  }
+
+  .whoWeAreBody h1 {
+    font-size: 30px;
+    padding-top: 0;
+  }
+  .whoWeAre div:last-child {
+    /* height: 230px;
+    width: 80% !important;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    padding-left: 20px;
+    margin-left: 20px;
+    text-align: center; */
+    height: 230px;
+    width: 83% !important;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    /* padding-left: 20px; */
+    /* margin-left: 20px; */
+    text-align: center;
+  }
+}
