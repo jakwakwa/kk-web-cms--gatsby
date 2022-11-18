@@ -1,6 +1,7 @@
 ---
 label: Services
 hide_body: true
+display_field: services_title
 fields:
 - type: text
   name: services_title
