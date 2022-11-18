@@ -1,6 +1,7 @@
 ---
-label: about
+label: About
 hide_body: true
+display_field: about_title
 fields:
 - name: about_title
   type: text
