@@ -15,3 +15,5 @@ fields:
 - type: list
   name: services_list
   label: services_list
+pages:
+- src/content/services/services.mdx
