@@ -63,7 +63,7 @@ const IndexPage = () => {
   let one = {}
   let two = {}
   let three = {}
-  const mappedData = jsStr.allMdx.nodes.map(s => {
+  const mappedData1 = jsStr.allMdx.nodes.map(s => {
     if (
       s.frontmatter.hero_heading_one === null &&
       s.frontmatter.services_title === null &&
@@ -109,13 +109,10 @@ const IndexPage = () => {
     }
   })
 
-  console.log("obj1", one)
-  console.log("obj2", two)
-  console.log("obj3", three)
-  // console.log("mappedData", mappedData)
+  console.log(mappedData1, mappedData2, mappedData3)
 
-  const homeData = { ...mappedData, ...mappedData2, ...mappedData3 }
-  console.log("homeData", homeData)
+  const homeData = { ...one, ...two, ...three }
+
   return (
     <>
       <Layout>
@@ -125,7 +122,7 @@ const IndexPage = () => {
             <h1>{homeData.heroHeadingOne}</h1>
             <h2>{homeData.heroHeadingTwo}</h2>
             <p>{homeData.heroParagraph}</p>
-            <div className={homeData.heroLinkWrapper}>
+            <div className={heroLinkWrapper}>
               <Link
                 to="#contact"
                 style={{
@@ -137,7 +134,15 @@ const IndexPage = () => {
               </Link>
             </div>
           </div>
-          <div className={heroImg}></div>
+          <div className={heroImg}>
+            <StaticImage
+              src="../images/hero-img.png"
+              width={800}
+              quality={95}
+              formats={["auto", "webp", "avif"]}
+              alt="A Gatsby astronaut"
+            />
+          </div>
         </div>
         <div className={headerdiv}></div>
 
