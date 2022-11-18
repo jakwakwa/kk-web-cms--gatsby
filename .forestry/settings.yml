@@ -9,7 +9,7 @@ sections:
   label: Hero
   create: documents
   match: "**/*"
-  new_doc_ext: ".mdx"
+  new_doc_ext: app
   templates:
   - hero-content
 - type: directory
