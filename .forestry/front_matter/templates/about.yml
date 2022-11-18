@@ -1,5 +1,5 @@
 ---
-label: About
+label: about
 hide_body: true
 fields:
 - name: about_title
