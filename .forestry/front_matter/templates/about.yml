@@ -1,4 +1,27 @@
 ---
 label: About
 hide_body: true
-fields: []
+fields:
+- name: about_title
+  type: text
+  config:
+    required: false
+  label: Title
+- name: about_paragraph_two
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Paragraph Two
+- name: about_paragraph
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Paragraph
