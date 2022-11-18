@@ -1,9 +1,9 @@
 ---
 label: Hero
 hide_body: true
-display_field: hero_heading
+display_field: hero_heading_one
 fields:
-- name: hero_heading
+- name: hero_heading_one
   type: text
   config:
     required: false
