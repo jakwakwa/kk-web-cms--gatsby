@@ -114,7 +114,7 @@ const IndexPage = () => {
   console.log("obj3", three)
   // console.log("mappedData", mappedData)
 
-  const homeData = { ...one, ...two, ...three }
+  const homeData = { ...mappedData, ...mappedData2, ...mappedData3 }
   console.log("homeData", homeData)
   return (
     <>
