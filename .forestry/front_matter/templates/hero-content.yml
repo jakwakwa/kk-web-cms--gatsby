@@ -3,17 +3,17 @@ label: Hero
 hide_body: true
 display_field: heading
 fields:
-- name: heading
+- name: hero_heading
   type: text
   config:
     required: false
   label: Hero Heading
-- name: secondary_heading
+- name: hero_secondary_heading
   type: text
   config:
     required: false
   label: Hero Secondary Heading
-- name: paragraph
+- name: hero_paragraph
   type: textarea
   default: ''
   config:
