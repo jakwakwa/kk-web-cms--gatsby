@@ -7,8 +7,9 @@ sections:
 - type: directory
   path: src/content/hero
   label: Hero
-  create: documents
+  create: all
   match: "**/*"
+  new_doc_ext: ".mdx"
 - type: directory
   path: src/content/about
   label: About
