@@ -3,17 +3,17 @@ label: Hero
 hide_body: true
 display_field: heading
 fields:
-- name: hero_heading
+- name: heading
   type: text
   config:
     required: false
-  label: Hero Heading
-- name: hero_secondary_heading
+  label: Heading
+- name: secondary_heading
   type: text
   config:
     required: false
-  label: Hero Secondary Heading
-- name: hero_paragraph
+  label: Secondary Heading
+- name: hero_content
   type: textarea
   default: ''
   config:
@@ -21,6 +21,6 @@ fields:
     wysiwyg: false
     schema:
       format: markdown
-  label: Hero Paragraph
+  label: Paragraph
 pages:
 - src/content/hero/Hero.mdx
