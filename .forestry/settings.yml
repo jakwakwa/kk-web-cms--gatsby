@@ -15,6 +15,7 @@ sections:
   label: About
   create: documents
   match: "**/*"
+  new_doc_ext: ".mdx"
 - type: directory
   path: src/content/services
   label: Services
