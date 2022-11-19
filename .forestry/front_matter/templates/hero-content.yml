@@ -19,14 +19,5 @@ fields:
     required: false
     max: 62
   label: Paragraph
-- name: hero_content
-  type: textarea
-  default: ''
-  config:
-    required: false
-    wysiwyg: false
-    schema:
-      format: markdown
-  label: Hero Content
 pages:
 - src/content/hero/Hero.mdx
