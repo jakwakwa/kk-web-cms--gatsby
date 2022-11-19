@@ -26,17 +26,17 @@ const Contact = () => {
 
           <h3>{`Contact Detials`}</h3>
           <p>
-            <span>Tel:</span> +27 (0)21 140 0928
+            <span>Tel:</span> +27 (0)11 555 12334
           </p>
           <p>
-            <span>Email:</span> Thelma@Bigtalent.co.za
+            <span>Email:</span> domain@com
           </p>
           <p style={{ maxWidth: "300px" }}>
             <span style={{ display: "block", marginTop: "10px" }}>
               Address:
             </span>
-            Icon Building, 24 Hans Strijdom Ave, Floors 1 - 6, Cape Town,
-            Western Cape, 8000, South Africa.
+            Icon Building, 24 Hans Strijdom Ave, Floors 1 - 6, Johannesburg,
+            8000, South Africa.
           </p>
         </div>
 

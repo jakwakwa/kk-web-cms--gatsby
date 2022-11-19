@@ -29,9 +29,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-      <div className={layoutstyles}>
-        <main>{children}</main>
-      </div>
+      <div className={layoutstyles}>{children}</div>
       <footer
         className={footer}
         style={{

@@ -27,7 +27,6 @@ const IndexPage = () => {
             hero_paragraph
             hero_secondary_heading
             about_paragraph
-            about_paragraph_two
             about_title
             serviceslist_heading
             services_paragraph
@@ -38,32 +37,11 @@ const IndexPage = () => {
       }
     }
   `)
-
-  const str = JSON.stringify(data)
-  const jsStr = JSON.parse(str)
-  // console.log(jsStr)
-
-  // const heroHeadingOne = jsStr.allMdx.nodes[0].frontmatter.hero_heading_one
-  // const heroParagraph = jsStr.allMdx.nodes[0].frontmatter.hero_paragraph
-
-  // const heroHeadingTwo =
-  //   jsStr.allMdx.nodes[0].frontmatter.hero_secondary_heading
-
-  // const aboutTitle = jsStr.allMdx.nodes[1].frontmatter.about_title
-  // const aboutParagraph = jsStr.allMdx.nodes[1].frontmatter.about_paragraph
-  // const aboutParagraphSecond =
-  //   jsStr.allMdx.nodes[2].frontmatter.about_paragraph_two
-  // const servParagraph = jsStr.allMdx.nodes[2].frontmatter.services_paragraph
-
-  // const servTitle = jsStr.allMdx.nodes[2].frontmatter.services_title
-  // const servListHeading = jsStr.allMdx.nodes[2].frontmatter.serviceslist_heading
-
-  // const servList = jsStr.allMdx.nodes[2].frontmatter.services_list
-  let obj = {}
+  let newObj = {}
   let one = {}
   let two = {}
   let three = {}
-  const mappedData1 = jsStr.allMdx.nodes.map(s => {
+  const mappedData1 = data.allMdx.nodes.map(s => {
     if (
       s.frontmatter.hero_heading_one === null &&
       s.frontmatter.services_title === null &&
@@ -71,14 +49,9 @@ const IndexPage = () => {
     ) {
       one = {
         aboutParagraph: s.frontmatter.about_paragraph,
-        aboutParagraphSecond: s.frontmatter.about_paragraph_two,
         aboutTitle: s.frontmatter.about_title,
       }
-      return one
     }
-  })
-
-  const mappedData2 = jsStr.allMdx.nodes.map(s => {
     if (
       s.frontmatter.hero_heading_one !== null &&
       s.frontmatter.services_title === null &&
@@ -89,34 +62,39 @@ const IndexPage = () => {
         heroParagraph: s.frontmatter.hero_paragraph,
         heroHeadingTwo: s.frontmatter.hero_secondary_heading,
       }
-      return two
     }
-  })
 
-  const mappedData3 = jsStr.allMdx.nodes.map(s => {
     if (
       s.frontmatter.hero_heading_one === null &&
       s.frontmatter.services_title !== null &&
       s.frontmatter.about_title === null
     ) {
       three = {
+        ...one,
+        ...two,
         servParagraph: s.frontmatter.services_paragraph,
         servTitle: s.frontmatter.services_title,
         servListHeading: s.frontmatter.serviceslist_heading,
         servList: s.frontmatter.services_list,
       }
-      return three
     }
+
+    newObj = {
+      ...one,
+      ...two,
+      ...three,
+    }
+
+    return newObj
   })
 
-  console.log(mappedData1, mappedData2, mappedData3)
-
-  const homeData = { ...one, ...two, ...three }
+  const homeData = mappedData1[2]
 
   return (
     <>
       <Layout>
         <Seo title="Home" />
+
         <div className={hero}>
           <div>
             <h1>{homeData.heroHeadingOne}</h1>
@@ -137,14 +115,12 @@ const IndexPage = () => {
           <div className={heroImg}>
             <StaticImage
               src="../images/hero-img.png"
-              width={800}
               quality={95}
               formats={["auto", "webp", "avif"]}
               alt="A Gatsby astronaut"
             />
           </div>
         </div>
-        <div className={headerdiv}></div>
 
         <Services
           title={homeData.servTitle}
@@ -155,7 +131,6 @@ const IndexPage = () => {
         <About
           title={homeData.aboutTitle}
           paragraph={homeData.aboutParagraph}
-          secondParagraph={homeData.aboutParagraphSecond}
         />
         <Contact />
       </Layout>
