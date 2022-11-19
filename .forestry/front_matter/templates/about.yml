@@ -11,8 +11,5 @@ fields:
   label: Paragraph
   config:
     max: 220
-- type: text
-  name: about_paragraph_two
-  label: Paragraph Two
 pages:
 - src/content/about/about.mdx
