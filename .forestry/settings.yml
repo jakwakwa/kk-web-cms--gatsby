@@ -31,9 +31,9 @@ sections:
   templates:
   - services
 - type: heading
-  label: BLOG
+  label: BLOG ( ... not active )
 - type: heading
-  label: PORTFOLIO
+  label: PORTFOLIO ( ... not active )
 upload_dir: KK-CMS
 public_path: https://res.cloudinary.com/dd9etouxv/image/upload/KK-CMS
 front_matter_path: ''
