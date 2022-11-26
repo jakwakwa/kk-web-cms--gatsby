@@ -1,6 +1,7 @@
 ---
 label: Values
-hide_body: true
+hide_body: false
+display_field: our_values_label
 fields:
 - type: text
   name: values_heading
