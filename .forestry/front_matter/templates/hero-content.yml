@@ -1,6 +1,7 @@
 ---
 label: Hero
 hide_body: true
+display_field: main_introduction_section__hero_
 fields:
 - name: hero_heading_one
   type: text
