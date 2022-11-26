@@ -29,7 +29,7 @@ sections:
   templates:
   - services
 upload_dir: KK-CMS
-public_path: KK-CMS
+public_path: https://res.cloudinary.com/dd9etouxv/image/upload/KK-CMS
 front_matter_path: ''
 use_front_matter_path: 
 file_template: ":filename:"
