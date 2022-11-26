@@ -34,6 +34,11 @@ sections:
   new_doc_ext: app
   templates:
   - services
+- type: document
+  path: src/content/contact-us
+  label: Contact Form
+  match: "**/*"
+  read_only: true
 - type: heading
   label: BLOG ( not active )
 - type: heading
