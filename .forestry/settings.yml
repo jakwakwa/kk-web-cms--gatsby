@@ -32,6 +32,8 @@ sections:
   - services
 - type: heading
   label: BLOG
+- type: heading
+  label: PORTFOLIO
 upload_dir: KK-CMS
 public_path: https://res.cloudinary.com/dd9etouxv/image/upload/KK-CMS
 front_matter_path: ''
