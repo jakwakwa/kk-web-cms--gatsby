@@ -21,3 +21,4 @@ fields:
   label: Paragraph
 pages:
 - src/content/hero/Hero.mdx
+- src/content/hero/hi-copy.mdx
