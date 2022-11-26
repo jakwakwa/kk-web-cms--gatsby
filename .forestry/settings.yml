@@ -17,7 +17,6 @@ sections:
 - type: document
   path: src/content/values/**/*
   label: Values
-  match: "**/*"
   read_only: true
 - type: directory
   path: src/content/about
