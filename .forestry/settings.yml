@@ -4,6 +4,8 @@ auto_deploy: false
 admin_path: "/static/admin"
 webhook_url:
 sections:
+  - type: heading
+    label: Home
   - type: directory
     path: src/content/hero
     label: Hero
@@ -12,9 +14,13 @@ sections:
     new_doc_ext: app
     templates:
       - hero-content
+  - type: document
+    path: src/content/values/**/*
+    label: Values
+    read_only: false
   - type: directory
     path: src/content/about
-    label: About
+    label: Founder
     create: documents
     match: "**/*"
     new_doc_ext: app
@@ -28,10 +34,24 @@ sections:
     new_doc_ext: app
     templates:
       - services
-upload_dir: static/uploads
-public_path: "/static/uploads"
+  - type: document
+    path: src/content/contact-us
+    label: Contact Form
+    read_only: true
+  - type: heading
+    label: BLOG ( not active )
+  - type: document
+    path: src/content/blog/posts/**/*
+    label: Blog Post
+  - type: heading
+    label: PORTFOLIO ( not active )
+  - type: document
+    path: src/content/portfolio/**/*
+    label: Portfolio Media Gallery
+upload_dir: KK-CMS
+public_path: https://res.cloudinary.com/dd9etouxv/image/upload/KK-CMS
 front_matter_path: ""
-use_front_matter_path: false
+use_front_matter_path:
 file_template: ":filename:"
 build:
   preview_output_directory: public

@@ -1,0 +1,32 @@
+---
+label: Contact Us Form
+hide_body: false
+display_field: contact_name
+fields:
+- name: contact_name
+  type: text
+  config:
+    required: true
+  label: Contact Name
+  description: Website public user input field
+- name: contact_number
+  type: number
+  label: Contact Number
+  description: ''
+  default: 0
+  required: true
+  config:
+    min: 9
+    max: 10
+    step: 
+    required: true
+- name: contact_description
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+    max: 1000
+  label: Contact Description

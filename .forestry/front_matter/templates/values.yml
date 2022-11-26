@@ -1,0 +1,23 @@
+---
+label: Values
+hide_body: false
+display_field: our_values_label
+fields:
+- type: text
+  name: values_heading
+  label: Values Heading
+- type: textarea
+  name: values_paragraph
+  label: Values Paragraph
+- name: values_displayed_image
+  type: file
+  config:
+    maxSize: 64
+  label: Values Displayed Image
+- name: our_values_label
+  type: text
+  config:
+    required: false
+  label: Our Values Label
+  description: 'Hidden Display Field '
+  hidden: true

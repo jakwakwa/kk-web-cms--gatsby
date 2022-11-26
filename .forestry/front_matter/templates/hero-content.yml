@@ -1,7 +1,7 @@
 ---
 label: Hero
 hide_body: true
-display_field: hero_heading_one
+display_field: main_introduction_section__hero_
 fields:
 - name: hero_heading_one
   type: text
@@ -19,5 +19,12 @@ fields:
     required: false
     max: 62
   label: Paragraph
+- name: main_introduction_section__hero_
+  type: text
+  config:
+    required: false
+  label: Main Introduction Section (Hero)
+  hidden: false
+  description: Display Field
 pages:
 - src/content/hero/Hero.mdx
