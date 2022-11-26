@@ -24,7 +24,7 @@ fields:
   config:
     required: false
   label: Main Introduction Section (Hero)
-  hidden: true
+  hidden: false
   description: Display Field
 pages:
 - src/content/hero/Hero.mdx
