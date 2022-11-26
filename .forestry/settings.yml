@@ -37,12 +37,19 @@ sections:
 - type: document
   path: src/content/contact-us
   label: Contact Form
-  match: "**/*"
   read_only: true
 - type: heading
   label: BLOG ( not active )
+- type: document
+  path: src/content/blog/posts/**/*
+  label: Blog Post
+  match: "**/*"
 - type: heading
   label: PORTFOLIO ( not active )
+- type: document
+  path: src/content/portfolio/**/*
+  label: Portfolio Media Gallery
+  match: "**/*"
 upload_dir: KK-CMS
 public_path: https://res.cloudinary.com/dd9etouxv/image/upload/KK-CMS
 front_matter_path: ''
