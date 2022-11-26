@@ -1,6 +1,7 @@
 ---
-label: Contact Us
+label: Contact Us Form
 hide_body: false
+display_field: contact_name
 fields:
 - name: contact_name
   type: text
