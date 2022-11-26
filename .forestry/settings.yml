@@ -14,9 +14,14 @@ sections:
   new_doc_ext: app
   templates:
   - hero-content
+- type: document
+  path: src/content/values/**/*
+  label: Values
+  match: "**/*"
+  read_only: true
 - type: directory
   path: src/content/about
-  label: About
+  label: Founder
   create: documents
   match: "**/*"
   new_doc_ext: app
