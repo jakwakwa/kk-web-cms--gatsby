@@ -3,14 +3,20 @@ label: Values
 hide_body: true
 fields:
 - type: text
-  name: services_title
-  label: services_title
+  name: values_heading
+  label: Values Heading
 - type: textarea
-  name: services_paragraph
-  label: services_paragraph
-- type: text
-  name: serviceslist_heading
-  label: serviceslist_heading
-- type: list
-  name: services_list
-  label: services_list
+  name: values_paragraph
+  label: Values Paragraph
+- name: values_displayed_image
+  type: file
+  config:
+    maxSize: 64
+  label: Values Displayed Image
+- name: our_values_label
+  type: text
+  config:
+    required: false
+  label: Our Values Label
+  description: 'Hidden Display Field '
+  hidden: true
