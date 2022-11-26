@@ -18,5 +18,12 @@ fields:
     required: false
     max: 62
   label: Paragraph
+- name: main_introduction_section__hero_
+  type: text
+  config:
+    required: false
+  label: Main Introduction Section (Hero)
+  hidden: true
+  description: Display Field
 pages:
 - src/content/hero/Hero.mdx
